@@ -12,6 +12,7 @@ Before installing on Debian systems. You need to `apt-get install libavahi-compa
     npm install idevice-browser
 
 Or put this in your `package.json`
+
     "dependencies": {
         "idevice-browser": "*"
     }
