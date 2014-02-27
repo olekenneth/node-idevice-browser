@@ -4,7 +4,7 @@ var mdns    = require('mdns2')
 
 var Browser = function() {
     var self = this
-      , devices = []
+      , devices = {}
       , browser;
 
     this.browsers = [mdns.createBrowser(mdns.tcp('apple-mobdev')), mdns.createBrowser(mdns.tcp('apple-mobdev2'))];
@@ -14,7 +14,7 @@ var Browser = function() {
 
         browser.on('serviceUp', function(device) {
             device.lastSeen = new Date();
-            devices.push(device);
+            devices[device.name] = device;
             self.emit('ideviceonline', device);
         });
 
@@ -25,11 +25,11 @@ var Browser = function() {
 
     this.getDevices = function(dateSinceLastSeen) {
         if (dateSinceLastSeen && !isNaN(dateSinceLastSeen.getTime())) {
-            var lastSeenDevices = [];
+            var lastSeenDevices = {};
 
             for(var i = 0; i < devices.length; i++) {
                 if (devices[i].lastSeen.getTime() > dateSinceLastSeen.getTime()) {
-                    lastSeenDevices.push(devices[i]);
+                    lastSeenDevices[devices[i].name] = devices[i];
                 }
             }
             return lastSeenDevices;
