@@ -1,0 +1,32 @@
+{
+    "name": "idevice-browser",
+    "description": "NPM for easily discovering iOS-devices (iOS6 and iOS7) connected to your local network.",
+    "author": {
+        "name": "Ole-Kenneth Rangnes",
+        "email": "ok@rait.no",
+        "url": "http://olekenneth.com"
+    },
+    "main" : "idevice",
+    "version" : "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/olekenneth/node-idevice-browser"
+    },
+    "dependencies": {
+        "mdns2": "*"
+    },
+    "keywords": [
+        "ios",
+        "idevice",
+        "iphone",
+        "ipad",
+        "ipod",
+        "ios6",
+        "ios7",
+        "browser",
+        "bonjour",
+        "mdns",
+        "multicast-dns"
+    ],
+    "license": "MIT"
+}
