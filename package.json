@@ -13,7 +13,7 @@
         "url": "https://github.com/olekenneth/node-idevice-browser"
     },
     "dependencies": {
-        "mdns2": "git+https://github.com/agnat/node_mdns.git"
+        "mdns": "git+https://github.com/agnat/node_mdns.git"
     },
     "keywords": [
         "ios",

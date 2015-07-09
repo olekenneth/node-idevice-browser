@@ -1,4 +1,4 @@
-var mdns    = require('mdns2')
+var mdns    = require('mdns')
   , events  = require('events')
   , util    = require('util');
 
