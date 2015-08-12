@@ -1,13 +1,13 @@
 {
     "name": "idevice-browser",
-    "description": "NPM for easily discovering iOS-devices (iOS6 and iOS7) connected to your local network.",
+    "description": "NPM for easily discovering iOS-devices (iOS6, iOS7 and iOS8) connected to your local network.",
     "author": {
-        "name": "Ole-Kenneth Rangnes",
+        "name": "Ole-Kenneth Bratholt",
         "email": "ok@rait.no",
         "url": "http://olekenneth.com"
     },
     "main" : "idevice",
-    "version" : "1.0.3",
+    "version" : "1.1.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/olekenneth/node-idevice-browser"
